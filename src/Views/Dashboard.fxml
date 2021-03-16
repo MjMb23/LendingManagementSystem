@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #f3f3f4;" stylesheets="@../Stylesheet/Dashboard.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DashboardController">
+   <children>
+      <VBox prefHeight="624.0" prefWidth="200.0" style="-fx-background-color: #2f4050;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="161.0" prefWidth="200.0" style="-fx-background-color: #233645;">
+               <children>
+                  <Text fx:id="UserCompletenameText" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Mark Jason Margallo" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="UsernameText" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="mjmargallo" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="PosistionText" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Database Admininstrator" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="200.0">
+               <children>
+                  <Button id="Navigation_Buttons" fx:id="dashboardButton" mnemonicParsing="false" onAction="#dashboardButtonClicked" prefHeight="60.0" prefWidth="233.0" stylesheets="@../Stylesheet/Dashboard.css" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button id="Navigation_Buttons" fx:id="transactionsButton" mnemonicParsing="false" onAction="#transactionsButtonClicked" prefHeight="60.0" prefWidth="221.0" stylesheets="@../Stylesheet/Dashboard.css" text="Transactions" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button id="Navigation_Buttons" fx:id="loansButton" mnemonicParsing="false" onAction="#loansButtonClicked" prefHeight="60.0" prefWidth="234.0" stylesheets="@../Stylesheet/Dashboard.css" text="Loan Accounts" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button id="Navigation_Buttons" fx:id="servicesButton" mnemonicParsing="false" onAction="#servicesButtonClicked" prefHeight="60.0" prefWidth="244.0" stylesheets="@../Stylesheet/Dashboard.css" text="Services" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button id="Navigation_Buttons" fx:id="employeesButton" mnemonicParsing="false" onAction="#employeesButtonClicked" prefHeight="60.0" prefWidth="200.0" stylesheets="@../Stylesheet/Dashboard.css" text="Employees" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button id="Navigation_Buttons" fx:id="userAccountsButton" mnemonicParsing="false" onAction="#userAccountsButtonClicked" prefHeight="60.0" prefWidth="252.0" stylesheets="@../Stylesheet/Dashboard.css" text="User Accounts" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button id="Navigation_Buttons" fx:id="remindersButton" mnemonicParsing="false" onAction="#remindersButtonClicked" prefHeight="60.0" prefWidth="233.0" stylesheets="@../Stylesheet/Dashboard.css" text="Reminders" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button id="Navigation_Buttons" fx:id="reportsButton" mnemonicParsing="false" onAction="#reportsButtonClicked" prefHeight="60.0" prefWidth="221.0" stylesheets="@../Stylesheet/Dashboard.css" text="Reports" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="396.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Designed &amp; Developed by:">
+                     <font>
+                        <Font name="System Italic" size="10.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Mark Jason D. Margallo">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="114.0" onMouseClicked="#accountsTableSelected" prefHeight="50.0" prefWidth="486.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="CompanyNameText" text="Megarenz Express Loan Management System">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonClicked" text="Logout">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="138.0" layoutY="42.0" prefHeight="50.0" prefWidth="799.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Text fx:id="titleText" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fx:id="dashboardContainer" layoutX="138.0" layoutY="84.0" prefHeight="980.0" prefWidth="1714.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <content>
+            <HBox fx:id="dashboard" prefWidth="1720.0">
+               <children>
+                  <VBox prefWidth="1300.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loans">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <HBox spacing="50.0">
+                           <children>
+                              <Button id="loansForApproval" fx:id="forApprovalButton" mnemonicParsing="false" onAction="#forApprovalButtonClicked" prefHeight="117.0" prefWidth="169.0">
+                                 <graphic>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="For Approval">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="forApprovalCount" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="48.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                              <Button id="loansApproved" fx:id="approvedButton" mnemonicParsing="false" onAction="#approvedButtonClicked" prefHeight="117.0" prefWidth="169.0">
+                                 <graphic>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Approved">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="approvedCount" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="48.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                              <Button id="accountsActive" fx:id="activeButton" mnemonicParsing="false" onAction="#activeButtonClicked" prefHeight="117.0" prefWidth="169.0">
+                                 <graphic>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Active">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="activeCount" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="48.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                              <Button id="accountsOverdue" fx:id="overdueButton" mnemonicParsing="false" onAction="#overdueButton" prefHeight="117.0" prefWidth="169.0">
+                                 <graphic>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Overdue">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="overdueCount" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="48.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                              <Button id="accountsSettled" fx:id="settledButton" mnemonicParsing="false" onAction="#settledButtonClicked" prefHeight="117.0" prefWidth="169.0">
+                                 <graphic>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Settled">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="settledCount" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="48.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                              <Button id="accountsBlocked" fx:id="blockedButton" mnemonicParsing="false" onAction="#blockedButtonClicked" prefHeight="117.0" prefWidth="169.0">
+                                 <graphic>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocked">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="blockedCount" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="48.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="10.0" top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Collections">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="138.0" prefWidth="1473.0" spacing="33.0">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" textAlignment="RIGHT" />
+                                          <Text fx:id="collectionsDateToday" fill="WHITE" layoutX="40.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #f8ac59;" text="Jan. 21, 2021" textAlignment="RIGHT" wrappingWidth="172.8721923828124" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox alignment="CENTER" prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <children>
+                                          <Text fx:id="collectionsTodayTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yesterday" textAlignment="RIGHT" />
+                                          <Text fx:id="collectionsDateYesterday" fill="WHITE" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #23c6c8;" text="Jan. 21, 2021" textAlignment="RIGHT" wrappingWidth="207.27215576171864" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="collectionsTotalYesterday" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Week" textAlignment="RIGHT" />
+                                          <Text fx:id="collectionsDateThisWeek" fill="WHITE" layoutX="74.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1ab394;" text="Jan. 21-20, 2021" textAlignment="RIGHT" wrappingWidth="138.2294921875001" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="collectionsThisWeekTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Month" textAlignment="RIGHT" />
+                                          <Text fx:id="collectionsMonth" fill="WHITE" layoutX="84.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ed5565;" text="January, 2021" textAlignment="RIGHT" wrappingWidth="128.6295166015626" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="collectionsThisMonthTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Year" textAlignment="RIGHT" />
+                                          <Text fx:id="collectionsThisYear" fill="WHITE" layoutX="74.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c84c6;" text="2021" textAlignment="RIGHT" wrappingWidth="138.2294921875001" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="collectionsThisYearTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Release">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" spacing="33.0">
+                           <children>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" textAlignment="RIGHT" />
+                                          <Text fx:id="releaseTodayDate" fill="WHITE" layoutX="74.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #f8ac59;" text="Jan. 21, 2021" textAlignment="RIGHT" wrappingWidth="138.2294921875" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="releaseTodayTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yesterday" textAlignment="RIGHT" />
+                                          <Text fx:id="releaseYesterdayDate" fill="WHITE" layoutX="84.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #23c6c8;" text="Jan. 21, 2021" textAlignment="RIGHT" wrappingWidth="128.87213134765614" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="releaseYesterdayTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Week" textAlignment="RIGHT" />
+                                          <Text fx:id="releaseThisWeekDate" fill="WHITE" layoutX="74.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1ab394;" text="Jan. 21-20, 2021" textAlignment="RIGHT" wrappingWidth="138.2294921875" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="releaseThisWeekTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Month" textAlignment="RIGHT" />
+                                          <Text fx:id="releaseThisMonth" fill="WHITE" layoutX="85.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ed5565;" text="January, 2021" textAlignment="RIGHT" wrappingWidth="127.99999999999994" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="releaseThisMonthTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Year" textAlignment="RIGHT" />
+                                          <Text fx:id="releaseThisYear" fill="WHITE" layoutX="112.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c84c6;" text="2021" textAlignment="RIGHT" wrappingWidth="100.6295166015625" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="releaseThisYearTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="138.0" spacing="33.0">
+                           <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" textAlignment="RIGHT" />
+                                          <Text fx:id="expensesTodayDate" fill="WHITE" layoutX="66.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #f8ac59;" text="Jan. 21, 2021" textAlignment="RIGHT" wrappingWidth="146.47216796875" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="expensesTodayTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yesterday" textAlignment="RIGHT" />
+                                          <Text fx:id="expensesYesterdayDate" fill="WHITE" layoutX="92.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #23c6c8;" text="Jan. 21, 2021" textAlignment="RIGHT" wrappingWidth="120.76904296874997" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="expensesYesterdayTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Week" textAlignment="RIGHT" />
+                                          <Text fx:id="expensesThisWeekDate" fill="WHITE" layoutX="81.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1ab394;" text="Jan. 21-20, 2021" textAlignment="RIGHT" wrappingWidth="131.9690475463867" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="expensesThisWeekTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Month" textAlignment="RIGHT" />
+                                          <Text fx:id="expensesThisMonth" fill="WHITE" layoutX="84.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ed5565;" text="January, 2021" textAlignment="RIGHT" wrappingWidth="128.80004882812494" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="expensesThisMonthTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Pane prefHeight="41.0" prefWidth="227.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Year" textAlignment="RIGHT" />
+                                          <Text fx:id="expensesThisYear" fill="WHITE" layoutX="135.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c84c6;" text="2021" textAlignment="RIGHT" wrappingWidth="77.67205810546864" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" />
+                                       </padding>
+                                    </Pane>
+                                    <HBox prefHeight="0.5" prefWidth="227.0" style="-fx-background-color: gray;" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="94.0" prefWidth="227.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Text fx:id="expensesThisYearTotal" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Simulator">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="160.0" prefWidth="1192.0" spacing="33.0">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <children>
+                              <HBox alignment="CENTER" prefWidth="1303.0" spacing="30.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="160.0" prefWidth="156.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Amount">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="simulatorLoanAmountField" prefHeight="30.0" prefWidth="156.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="160.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Type">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="simulatorLoanTypeCombobox" onAction="#simulatorLoanTypeComboboxChanged" prefHeight="30.0" prefWidth="150.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="160.0" prefWidth="156.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Frequency">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="simulatorFrequencyCombobox" prefHeight="30.0" prefWidth="150.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <CheckBox fx:id="IncludeSundaysCheckBox" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="Sundays">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="139.0" prefWidth="70.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rate">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="simulatorInterestRateField" prefHeight="30.0" prefWidth="36.0" />
+                                                <Label text=" %">
+                                                   <HBox.margin>
+                                                      <Insets top="3.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="139.0" prefWidth="161.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Term">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox prefHeight="30.0" prefWidth="156.0">
+                                             <children>
+                                                <TextField fx:id="simulatorLoanTermField" prefHeight="30.0" prefWidth="50.0" />
+                                                <ComboBox fx:id="simulatorLoanTermCombobox" prefHeight="30.0" prefWidth="118.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <Button fx:id="simulatorCalculateButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#simulatorCalculateButtonClicked" prefHeight="36.0" prefWidth="130.0" text="CALCULATE">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <VBox alignment="TOP_CENTER" prefHeight="160.0" prefWidth="156.0">
+                                       <children>
+                                          <Text fx:id="paymentPerFrequencyLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment/Frequecy">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="simulatorPaymentField" editable="false" prefHeight="30.0" prefWidth="156.0">
+                                             <VBox.margin>
+                                                <Insets top="3.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <TextField fx:id="simulatorTotalAmountField" editable="false" prefHeight="30.0" prefWidth="156.0" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefWidth="399.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due Loans">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <VBox alignment="TOP_CENTER" prefWidth="346.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due Today">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TableView fx:id="dueTodayTable" prefHeight="220.0" prefWidth="346.0">
+                                <columns>
+                                  <TableColumn fx:id="dueTodayNameColumn" prefWidth="75.0" text="Name" />
+                                  <TableColumn fx:id="dueTodayCollectorColumn" prefWidth="75.0" text="Collector/Agent" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefWidth="346.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due Tommorow">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TableView fx:id="dueTomorrowTable" prefHeight="220.0" prefWidth="346.0">
+                                 <columns>
+                                    <TableColumn fx:id="dueTomorrowNameColumn" prefWidth="75.0" text="Name" />
+                                    <TableColumn fx:id="dueTomorrowCollectorColumn" prefWidth="75.0" text="Collector/Agent" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="23.5" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefWidth="346.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due this Week">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TableView fx:id="dueThisWeekTable" prefHeight="220.0" prefWidth="346.0">
+                                 <columns>
+                                    <TableColumn fx:id="dueThisWeekNameColumn" prefWidth="75.0" text="Name" />
+                                    <TableColumn fx:id="dueThisWeekCollectorColumn" prefWidth="75.0" text="Collector/Agent" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="23.5" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </content></ScrollPane>
+      <ScrollPane fx:id="loansBox" layoutX="200.0" layoutY="100.0" prefWidth="1720.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <content>
+            <HBox prefHeight="778.0" prefWidth="1706.0">
+               <children>
+                  <VBox prefHeight="738.0" prefWidth="279.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Accounts">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="715.0" prefWidth="271.0" style="-fx-background-color: white;">
+                           <children>
+                              <VBox fx:id="createAccountVBox" minWidth="-Infinity" prefHeight="725.0" prefWidth="266.0">
+                                 <children>
+                                    <TextField fx:id="lastnameField">
+                                       <VBox.margin>
+                                          <Insets top="17.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Lastname">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="firstnameField">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Firstname">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="middlenameField">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Middle Name">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="addressField">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Address">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="contactNumberField">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Contact Number">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <ComboBox fx:id="employeeAssignedCombobox" prefHeight="26.0" prefWidth="270.0">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <Label text="Assigned agent/collector">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="loanAmountField">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Loan Amount">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <ComboBox fx:id="loanTypeComboBox" onAction="#loanTypeComboBoxSelectionChanged" prefHeight="26.0" prefWidth="270.0">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <Label text="Loan Type">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <HBox prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="loanTermValueField" onAction="#loanTermValueFieldEnterKeyPressed" prefHeight="26.0" prefWidth="70.0">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <ComboBox fx:id="loanTermCombobox" prefHeight="26.0" prefWidth="159.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Label text="Loan Term">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <HBox prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="46.0">
+                                             <children>
+                                                <ComboBox fx:id="frequencyCombobox" prefHeight="26.0" prefWidth="128.0">
+                                                   <VBox.margin>
+                                                      <Insets top="4.0" />
+                                                   </VBox.margin>
+                                                </ComboBox>
+                                                <Label text="Frequency">
+                                                   <padding>
+                                                      <Insets top="-2.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <CheckBox fx:id="sundaysCheckBox" mnemonicParsing="false" text="Sundays">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="8.0" />
+                                             </HBox.margin>
+                                          </CheckBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="2.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="rateField" editable="false" prefHeight="26.0" prefWidth="70.0">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Label text=" %  ">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#calculateButtonClicked" prefHeight="26.0" prefWidth="126.0" text="Calculate">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Label text="Rate">
+                                       <padding>
+                                          <Insets top="-2.0" />
+                                       </padding>
+                                    </Label>
+                                    <DatePicker fx:id="dueDateDatePicker" prefHeight="26.0" prefWidth="237.0">
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                    <Label text="Due Date" />
+                                    <HBox prefWidth="200.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="95.0">
+                                             <children>
+                                                <TextField fx:id="totalAmountField" editable="false" prefHeight="26.0" prefWidth="94.0">
+                                                   <VBox.margin>
+                                                      <Insets top="4.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                                <Label text="Total Amount">
+                                                   <padding>
+                                                      <Insets top="-2.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" prefWidth="152.0">
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <TextField fx:id="paymentPerFrequencyField" editable="false" prefHeight="26.0" prefWidth="139.0">
+                                                   <VBox.margin>
+                                                      <Insets top="4.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                                <Label text="Amortization">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="26.0" prefWidth="89.0" text="Save" />
+                                          <Button fx:id="saveAndReleaseButton" mnemonicParsing="false" onAction="#saveAndReleaseButtonClicked" prefHeight="26.0" prefWidth="149.0" text="Save &amp; Release" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="7.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Label text=" " />
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="739.0" prefWidth="1414.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <VBox minHeight="-Infinity" prefWidth="484.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefWidth="679.0">
+                                 <children>
+                                    <Label text="Search by: " />
+                                    <ComboBox fx:id="searchFilterComboBox" onAction="#searchFilterComboBoxChanged" prefWidth="150.0" />
+                                    <Label text="Search for: ">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="searchForField" onAction="#searForFieldEnterPressed" onKeyPressed="#SearchForKeyPressed" />
+                                    <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="26.0" prefWidth="70.0" text="Search">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Label text="Status Filter: ">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="showStatusComboBox" onAction="#showStatusComboBoxChanged" prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="17.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <TableView fx:id="accountsTable" minHeight="-Infinity" onKeyPressed="#accountTableKeyPressed" onMouseClicked="#accountsTableSelected" prefHeight="685.0" prefWidth="1341.0">
+                                <columns>
+                                    <TableColumn fx:id="loanIdColumn" prefWidth="66.39996147155762" text="ID" />
+                                  <TableColumn fx:id="loanClientNameColumn" prefWidth="100.0" text="Name" />
+                                  <TableColumn fx:id="loanTypeColumn" prefWidth="70.0" text="Loan Type" />
+                                    <TableColumn fx:id="loanPrincipalColumn" minWidth="0.0" prefWidth="70.0" text="Pricipal" />
+                                    <TableColumn fx:id="loanRateColumn" minWidth="2.39996337890625" prefWidth="50.0" text="Rate" />
+                                    <TableColumn fx:id="loanTermColumn" prefWidth="50.0" text="Term" />
+                                    <TableColumn fx:id="loanTotalColumn" prefWidth="70.0" text="Total" />
+                                    <TableColumn fx:id="loanPenaltyColumn" prefWidth="70.0" text="Penalty" />
+                                    <TableColumn fx:id="loanBalanceColumn" prefWidth="70.0" text="Balance" />
+                                    <TableColumn fx:id="loanReleaseDateColumn" minWidth="8.800048828125" prefWidth="100.0" text="Release Date" />
+                                    <TableColumn fx:id="loanDueDateColumn" prefWidth="100.0" text="Due Date" />
+                                    <TableColumn fx:id="loanScheduledAmountColumn" prefWidth="83.199951171875" text="Amortization" />
+                                    <TableColumn fx:id="loanPaymentDate" prefWidth="101.5999755859375" text="Payment Date" />
+                                    <TableColumn fx:id="loanStatusColumn" prefWidth="109.60009765625" text="Status" />
+                                    <TableColumn fx:id="loanAssignedColumn" prefWidth="122.39990234375" text="Assigned" />
+                                    <TableColumn fx:id="loanReceiverColumn" prefWidth="105.60009765625" text="Recieved by:" />
+                                </columns>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <HBox prefWidth="200.0" spacing="20.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Button fx:id="cancelButton" disable="true" mnemonicParsing="false" onAction="#cancelButtonClicked" prefWidth="100.0" text="Cancel" />
+                                    <Button fx:id="editButton" mnemonicParsing="false" onAction="#editButtonClicked" prefWidth="100.0" text="Edit" />
+                                    <Button fx:id="viewLedgerButton" mnemonicParsing="false" onAction="#viewLedgerButtonClicked" prefHeight="26.0" prefWidth="122.0" text="View Ledger" />
+                                    <Button fx:id="approveButton" mnemonicParsing="false" onAction="#approveButtonClicked" prefWidth="100.0" text="Approve" />
+                                    <Button fx:id="declineButton" mnemonicParsing="false" onAction="#declineButtonClicked" prefWidth="100.0" text="Decline" />
+                                    <Button fx:id="releaseButton" mnemonicParsing="false" onAction="#releaseButtonClicked" prefWidth="100.0" text="Release" />
+                                    <Button fx:id="renewButton" mnemonicParsing="false" onAction="#renewButtonClicked" prefWidth="100.0" text="Renew" />
+                                    <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonClicked" prefWidth="100.0" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="100.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="blockButton" mnemonicParsing="false" onAction="#blockButtonClicked" prefWidth="100.0" text="Block" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="transactionScrollPane" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="1701.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+         <content>
+            <VBox fx:id="containerVbox" prefHeight="966.0" prefWidth="1692.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox fx:id="transactionNavigation" alignment="CENTER_LEFT" layoutX="219.0" layoutY="119.0" prefHeight="50.0" prefWidth="1651.0" style="-fx-background-color: white;" visible="false" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <Label text="Search by:">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Label text="Search for:">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Search">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="employeesContainer" layoutX="200.0" layoutY="100.0" prefHeight="980.0" prefWidth="1720.0" spacing="20.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <VBox minWidth="-Infinity" prefHeight="940.0" prefWidth="350.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="employeeLastname" />
+                  <Label text="Lastname" />
+                  <TextField fx:id="employeeFirstname">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Firstname" />
+                  <TextField fx:id="employeeMiddlename">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Middle Name" />
+                  <TextField fx:id="employeeAddress">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Address" />
+                  <TextField fx:id="employeeContactNumber">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Contact Number" />
+                  <ComboBox fx:id="employeePositionComboBox" prefHeight="26.0" prefWidth="318.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label text="Position" />
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="employeeSaveButton" mnemonicParsing="false" onAction="#employeeSaveButtonClicked" prefWidth="100.0" text="Save" />
+                        <Button fx:id="employeeUpdateButton" mnemonicParsing="false" onAction="#employeeUpdateButtonClicked" prefWidth="100.0" text="Update" />
+                        <Button fx:id="employeeDeleteButton" mnemonicParsing="false" onAction="#employeeDeleteButtonClicked" prefWidth="100.0" text="Delete" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="940.0" prefWidth="1417.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView fx:id="employeeTable" onMouseClicked="#employeesTableClicked" prefHeight="952.0" prefWidth="1403.0">
+                    <columns>
+                      <TableColumn fx:id="employeeIDColumn" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="employeeLastnameColumn" prefWidth="75.0" text="Lastname" />
+                        <TableColumn fx:id="employeeFirstnameColumn" prefWidth="75.0" text="Firstname" />
+                        <TableColumn fx:id="employeeMiddleNameColumn" prefWidth="75.0" text="Middle Name" />
+                        <TableColumn fx:id="employeeAddressColumn" prefWidth="75.0" text="Address" />
+                        <TableColumn fx:id="employeeContactColumn" prefWidth="75.0" text="Contact Number" />
+                        <TableColumn fx:id="employeePositionColumn" prefWidth="75.0" text="Position" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="servicesContainer" layoutX="200.0" layoutY="100.0" prefHeight="980.0" prefWidth="1720.0" spacing="20.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <VBox minWidth="-Infinity" prefHeight="940.0" prefWidth="350.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="servicesLoanDescription" />
+                  <Label text="Loan Description" />
+                  <TextField fx:id="servicesInterestRate">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Interest Rate" />
+                  <TextField fx:id="servicesPenaltyRate">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Penalty Rate" />
+                  <ComboBox fx:id="servicesStatusComboBox" prefHeight="26.0" prefWidth="318.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label text="Status" />
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="servicesSaveButton" mnemonicParsing="false" onAction="#servicesSaveButtonClicked" prefWidth="100.0" text="Save" />
+                        <Button fx:id="servicesUpdateButton" mnemonicParsing="false" onAction="#servicesUpdateButtonClicked" prefWidth="100.0" text="Update" />
+                        <Button fx:id="servicesDeleteButton" mnemonicParsing="false" onAction="#servicesDeleteButtonClicked" prefWidth="100.0" text="Delete" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="940.0" prefWidth="1417.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView fx:id="servicesTable" onMouseClicked="#servicesTableClicked" prefHeight="952.0" prefWidth="1403.0">
+                     <columns>
+                        <TableColumn fx:id="servicesLoanTypeIDColumn" prefWidth="75.0" text="Loan Type ID" />
+                        <TableColumn fx:id="servicesDescriptionColumn" prefWidth="75.0" text="Description" />
+                        <TableColumn fx:id="servicesInterestRateColumn" prefWidth="75.0" text="Interest Rate" />
+                        <TableColumn fx:id="servicesPenaltyRateColumn" prefWidth="75.0" text="Penalty Rate" />
+                        <TableColumn fx:id="servicesStatusColumn" prefWidth="75.0" text="Status" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="userContainer" layoutX="200.0" layoutY="100.0" prefHeight="980.0" prefWidth="1720.0" spacing="20.0" visible="false">
+         <children>
+            <VBox minWidth="-Infinity" prefHeight="940.0" prefWidth="350.0" style="-fx-background-color: white;">
+               <children>
+                  <ComboBox fx:id="userEmployeeComboBox" prefHeight="26.0" prefWidth="318.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label text="Employee or Collector" />
+                  <TextField fx:id="usernameField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Username" />
+                  <TextField fx:id="passwordField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Password" />
+                  <RadioButton fx:id="adminRadioButton" mnemonicParsing="false" text="Administrator">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="userSaveButton" mnemonicParsing="false" onAction="#userSaveButtonClicked" prefWidth="100.0" text="Save" />
+                        <Button fx:id="userUpdateButton" mnemonicParsing="false" onAction="#userUpdateButtonClicked" prefWidth="100.0" text="Update" />
+                        <Button fx:id="userDeactivateButton" mnemonicParsing="false" onAction="#userDeactivateButtonClicked" prefWidth="100.0" text="Deactivate" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="940.0" prefWidth="1417.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView fx:id="userTable" onMouseClicked="#userTableClicked" prefHeight="952.0" prefWidth="1403.0">
+                     <columns>
+                        <TableColumn fx:id="userIDColumn" prefWidth="75.0" text="User ID" />
+                        <TableColumn fx:id="userFullnameColumn" prefWidth="75.0" text="User Fullname" />
+                        <TableColumn fx:id="usernameColumn" prefWidth="75.0" text="Username" />
+                        <TableColumn fx:id="passwordColumn" prefWidth="75.0" text="Password" />
+                        <TableColumn fx:id="userAdminColumn" prefWidth="75.0" text="Administrator" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

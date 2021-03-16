@@ -1,0 +1,76 @@
+/*Navigation buttons*/
+#Navigation_Buttons{
+    -fx-background-color:  transparent;
+    -fx-border-radius: 0px;
+}
+
+#Navigation_Buttons:hover{
+    -fx-background-color: #5D6369;
+    -fx-background-insets: 0, 0 0 0 2;
+}
+
+#Navigation_Buttons:focused {
+    -fx-background-color: #1d9c86,  #233645;
+    -fx-background-insets: 0, 0 0 0 5;
+}
+
+/*loans buttons in dashboard*/
+#loansForApproval{
+    -fx-background-color:  #f8ac59;
+}
+
+#loansApproved{
+    -fx-background-color:  #23c6c8;
+}
+
+#accountsActive{
+    -fx-background-color:  #1ab394;
+}
+
+#accountsOverdue{
+    -fx-background-color:  #ed5565;
+}
+
+#accountsSettled{
+    -fx-background-color:  #1c84c6;
+}
+
+#accountsBlocked{
+    -fx-background-color:  #3c3c3c;
+}
+
+#loansForApproval:hover{
+    -fx-background-color:  #f79328;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+#loansApproved:hover{
+    -fx-background-color:  #009cc7;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+#accountsActive:hover{
+    -fx-background-color:  #009574;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+#accountsOverdue:hover{
+    -fx-background-color:  #ed263a;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+#accountsSettled:hover{
+    -fx-background-color:  #0063c7;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
+
+#accountsBlocked:hover{
+    -fx-background-color:  #262626;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+}
