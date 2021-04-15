@@ -131,7 +131,7 @@
             <Insets left="20.0" />
          </padding>
       </HBox>
-      <ScrollPane fx:id="dashboardContainer" layoutX="138.0" layoutY="84.0" prefHeight="980.0" prefWidth="1714.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+      <ScrollPane fx:id="dashboardContainer" layoutX="138.0" layoutY="84.0" prefHeight="980.0" prefWidth="1714.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
          <content>
             <HBox fx:id="dashboard" prefWidth="1720.0">
                <children>
@@ -1503,7 +1503,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
       </HBox>
-      <HBox fx:id="userContainer" layoutX="200.0" layoutY="100.0" prefHeight="980.0" prefWidth="1720.0" spacing="20.0" visible="false">
+      <HBox fx:id="userContainer" layoutX="200.0" layoutY="100.0" prefHeight="980.0" prefWidth="1720.0" spacing="20.0">
          <children>
             <VBox minWidth="-Infinity" prefHeight="940.0" prefWidth="350.0" style="-fx-background-color: white;">
                <children>
@@ -1545,9 +1545,9 @@
                   <Insets left="20.0" right="20.0" top="20.0" />
                </padding>
             </VBox>
-            <VBox prefHeight="940.0" prefWidth="1417.0" style="-fx-background-color: white;">
+            <VBox prefHeight="940.0" prefWidth="1417.0" spacing="20.0" style="-fx-background-color: white;">
                <children>
-                  <TableView fx:id="userTable" onMouseClicked="#userTableClicked" prefHeight="952.0" prefWidth="1403.0">
+                  <TableView fx:id="userTable" onMouseClicked="#userTableClicked" prefHeight="810.0" prefWidth="1403.0">
                      <columns>
                         <TableColumn fx:id="userIDColumn" prefWidth="75.0" text="User ID" />
                         <TableColumn fx:id="userFullnameColumn" prefWidth="75.0" text="User Fullname" />
@@ -1559,6 +1559,7 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
+                  <Button fx:id="userCancelSelectionButton" mnemonicParsing="false" onAction="#userCancelSelectionButtonClicked" text="Cancel" />
                </children>
             </VBox>
          </children>
